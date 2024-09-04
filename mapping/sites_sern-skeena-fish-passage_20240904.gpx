@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <gpx version="1.1" creator="GDAL 3.5.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ogr="http://osgeo.org/gdal" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
-<metadata><bounds minlat="54.182029530047217" minlon="-127.739520390335230" maxlat="55.314274050475625" maxlon="-126.762135297947950"/></metadata>              
+<metadata><bounds minlat="54.182029530047217" minlon="-127.739520390335230" maxlat="55.314274050475618" maxlon="-126.762135297947950"/></metadata>              
 <wpt lat="54.812596679503919" lon="-127.73952039033523">
   <name>8525</name>
   <desc>2.6km of bt rearing habitat.No action warranted at this crossing, although there is potential for embedding existing pipe to ensure fish passage. High habitat value upstream of crossing for 100m, then stream becomes grassy wetland with multiple braids.  Crossing fix recommendation of a 1x3 wooden box culvert is from fish passage assessment carried out in 2010.</desc>
 </wpt>
-<wpt lat="54.805166013035254" lon="-127.713167809829599">
+<wpt lat="54.805166013035247" lon="-127.713167809829599">
   <name>8530</name>
   <desc>9.4km of bt rearing habitat.Channel is steeper downstream of culvert. Very deep fill with a small outlet drop. 10:59</desc>
 </wpt>
@@ -17,7 +17,7 @@
   <name>58067</name>
   <desc>10.1km of bt rearing habitat.Replace with OBS</desc>
 </wpt>
-<wpt lat="54.792305794485088" lon="-127.181079431311687">
+<wpt lat="54.792305794485081" lon="-127.181079431311687">
   <name>58242</name>
   <desc>19.2km of bt rearing habitat.If culvert is proven to be a barrier, install OBS</desc>
 </wpt>
@@ -41,7 +41,7 @@
   <name>124500</name>
   <desc>15.6km of bt rearing habitat.Wetland type habitat upstream with stream channel containing abundant gravels downstream.</desc>
 </wpt>
-<wpt lat="54.438346661023971" lon="-126.76213529794795">
+<wpt lat="54.438346661023964" lon="-126.76213529794795">
   <name>195934</name>
   <desc>4.3km of bt rearing habitat.Currently 2 CVs, no access at low water</desc>
 </wpt>
@@ -49,15 +49,15 @@
   <name>197379</name>
   <desc>0.8km of bt rearing habitat.Two thirds of culvert on upstream side has baffles. Fish sampling and PIT tagging conducted. Design underway by MoF. 13:18</desc>
 </wpt>
-<wpt lat="54.620983930646837" lon="-126.919289309522554">
+<wpt lat="54.62098393064683" lon="-126.919289309522554">
   <name>197668</name>
   <desc>23.2km of bt rearing habitat.CN crossing has had Newbury riffles constructed to decrease the size of the outlet drop but drop still present. Abundant gravels suitable for spawning chinook and coho present. Some deep pools available for fry/parr overwintering.</desc>
 </wpt>
-<wpt lat="55.314274050475625" lon="-127.694177681179298">
+<wpt lat="55.314274050475618" lon="-127.694177681179298">
   <name>198217</name>
   <desc>0.5km of bt rearing habitat.Francis (chief) indicated this is historic coho harvest site for Glen Vowell community and historic coho spawning stream. 2 1.25m culverts side by side. Trash rack has been removed from inlet. Inlet has significant amount of debris. Extensive gravels present suitable for CO spawning upstream and downstream. Good flow and large stream. On road to water treatment plant. 12:20</desc>
 </wpt>
-<wpt lat="55.181978660409648" lon="-127.736914389698939">
+<wpt lat="55.181978660409641" lon="-127.736914389698939">
   <name>198916</name>
   <desc>7.7km of bt rearing habitat.Very high value habitat upstream with pockets of gravel throughout. Adult cutthroat or rainbow observed just downstream of Highway 16 crossing upstream of here. Structure is dated 1923. Water flows within the box. Culvert at the time of the survey was approximately two to 5 cm deep. Skeena fisheries commission site with recommendation for installation of baffles. Fill depth estimated at 30 m and culvert length at 120 m, but changed to 9.9 and 99, respectively, in order to fulfill provincial sumbission requirements.. 13:35:25</desc>
 </wpt>
