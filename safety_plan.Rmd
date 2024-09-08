@@ -452,6 +452,20 @@ table_sites <- fpr::fpr_db_query(
 table_sites |>  write_csv("data/fish_sampling_sites.csv")
 ```
 
+```{r gpx-kml-clean}
+# because we rebuild everytime we need to remove the old files so we don't
+# zip up old files
+
+##identify the old zip
+fs::file_delete(
+  fs::dir_ls(path = "docs", glob = "*.zip")
+)
+
+
+fs::file_delete(
+  fs::dir_ls(path = "mapping", glob = "*.gpx|*.kml")
+)
+```
 
 
 ```{r gpx, results='hide'}
@@ -479,9 +493,15 @@ table_sites |>
   sf::st_write(dsn = paste0("mapping/sites_", params$name_project_name, '_', format(Sys.Date(), "%Y%m%d"), ".kml"), delete_dsn = TRUE, quiet = TRUE)
 
 
-##now we will zip up the kml files in the mapping folder and burn to the docs folder (and rename with kmz, it does not work to zip to kmz!!)
-files_to_zip <- paste0("mapping/", list.files(path = "mapping/", pattern = "\\.kml$"))  ##this will zip all kmls in file so watch out
-zip::zipr(paste0("mapping/sites_", params$name_project_name, '_', format(Sys.Date(), "%Y%m%d"), '_kml.zip'), files = files_to_zip)  ##it does not work to zip to kmz!!
+##now we will zip up the kml files in the mapping folder and burn to the ##now we will zip up the kml files in the mapping folder and burn to the docs folder (and rename with kmz, it does not work to zip to kmz!!)
+files_to_zip <- fs::dir_ls(path = "mapping", glob = "*.kml|*.gpx")
+
+
+##it does not work to zip to kmz and you can't donwload a kmkl from github so we zip to .zip
+zip::zipr(
+  paste0('docs/sites_', params$name_project_name, '_', format(Sys.Date(), '%Y%m%d'), '_kml_gpx.zip'), 
+  files = files_to_zip
+  )  
 
 
 ```

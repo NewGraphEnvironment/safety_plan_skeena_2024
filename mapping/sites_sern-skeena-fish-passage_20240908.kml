@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document id="root_doc">
-<Schema name="sites_sern_skeena_fish_passage_20240904" id="sites_sern_skeena_fish_passage_20240904">
+<Schema name="sites_sern_skeena_fish_passage_20240908" id="sites_sern_skeena_fish_passage_20240908">
 	<SimpleField name="id" type="int"></SimpleField>
 	<SimpleField name="stream_name" type="string"></SimpleField>
 	<SimpleField name="utm_zone" type="int"></SimpleField>
@@ -15,10 +15,10 @@
 	<SimpleField name="long" type="float"></SimpleField>
 	<SimpleField name="lat" type="float"></SimpleField>
 </Schema>
-<Folder><name>sites_sern_skeena_fish_passage_20240904</name>
+<Folder><name>sites_sern_skeena_fish_passage_20240908</name>
   <Placemark>
 	<name>8525</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240904">
+	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240908">
 		<SimpleData name="id">8525</SimpleData>
 		<SimpleData name="stream_name">Copper</SimpleData>
 		<SimpleData name="utm_zone">9</SimpleData>
@@ -36,7 +36,7 @@
   </Placemark>
   <Placemark>
 	<name>8530</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240904">
+	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240908">
 		<SimpleData name="id">8530</SimpleData>
 		<SimpleData name="stream_name">Sandstone Creek</SimpleData>
 		<SimpleData name="utm_zone">9</SimpleData>
@@ -54,7 +54,7 @@
   </Placemark>
   <Placemark>
 	<name>8547</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240904">
+	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240908">
 		<SimpleData name="id">8547</SimpleData>
 		<SimpleData name="stream_name">Copper</SimpleData>
 		<SimpleData name="utm_zone">9</SimpleData>
@@ -72,7 +72,7 @@
   </Placemark>
   <Placemark>
 	<name>58067</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240904">
+	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240908">
 		<SimpleData name="id">58067</SimpleData>
 		<SimpleData name="stream_name">Tributary to Gramophone Creek</SimpleData>
 		<SimpleData name="utm_zone">9</SimpleData>
@@ -90,7 +90,7 @@
   </Placemark>
   <Placemark>
 	<name>58242</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240904">
+	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240908">
 		<SimpleData name="id">58242</SimpleData>
 		<SimpleData name="stream_name">Kathlyn Creek</SimpleData>
 		<SimpleData name="utm_zone">9</SimpleData>
@@ -108,7 +108,7 @@
   </Placemark>
   <Placemark>
 	<name>123377</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240904">
+	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240908">
 		<SimpleData name="id">123377</SimpleData>
 		<SimpleData name="stream_name">Thompson Creek</SimpleData>
 		<SimpleData name="utm_zone">9</SimpleData>
@@ -126,7 +126,7 @@
   </Placemark>
   <Placemark>
 	<name>123393</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240904">
+	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240908">
 		<SimpleData name="id">123393</SimpleData>
 		<SimpleData name="stream_name">Lemieux creek</SimpleData>
 		<SimpleData name="utm_zone">9</SimpleData>
@@ -144,7 +144,7 @@
   </Placemark>
   <Placemark>
 	<name>123426</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240904">
+	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240908">
 		<SimpleData name="id">123426</SimpleData>
 		<SimpleData name="stream_name">Robin Creek</SimpleData>
 		<SimpleData name="utm_zone">9</SimpleData>
@@ -162,7 +162,7 @@
   </Placemark>
   <Placemark>
 	<name>124422</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240904">
+	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240908">
 		<SimpleData name="id">124422</SimpleData>
 		<SimpleData name="stream_name">Tributary to Waterfall Creek</SimpleData>
 		<SimpleData name="utm_zone">9</SimpleData>
@@ -180,7 +180,7 @@
   </Placemark>
   <Placemark>
 	<name>124500</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240904">
+	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240908">
 		<SimpleData name="id">124500</SimpleData>
 		<SimpleData name="stream_name">Helps Creek</SimpleData>
 		<SimpleData name="utm_zone">9</SimpleData>
@@ -198,7 +198,7 @@
   </Placemark>
   <Placemark>
 	<name>195934</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240904">
+	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240908">
 		<SimpleData name="id">195934</SimpleData>
 		<SimpleData name="stream_name">Stock Creek</SimpleData>
 		<SimpleData name="utm_zone">9</SimpleData>
@@ -216,7 +216,7 @@
   </Placemark>
   <Placemark>
 	<name>197379</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240904">
+	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240908">
 		<SimpleData name="id">197379</SimpleData>
 		<SimpleData name="stream_name">Tributary to Owen Creek</SimpleData>
 		<SimpleData name="utm_zone">9</SimpleData>
@@ -234,7 +234,7 @@
   </Placemark>
   <Placemark>
 	<name>197668</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240904">
+	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240908">
 		<SimpleData name="id">197668</SimpleData>
 		<SimpleData name="stream_name">Coffin Creek</SimpleData>
 		<SimpleData name="utm_zone">9</SimpleData>
@@ -252,7 +252,7 @@
   </Placemark>
   <Placemark>
 	<name>198217</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240904">
+	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240908">
 		<SimpleData name="id">198217</SimpleData>
 		<SimpleData name="stream_name">Tributary to Skeena River</SimpleData>
 		<SimpleData name="utm_zone">9</SimpleData>
@@ -270,7 +270,7 @@
   </Placemark>
   <Placemark>
 	<name>198916</name>
-	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240904">
+	<ExtendedData><SchemaData schemaUrl="#sites_sern_skeena_fish_passage_20240908">
 		<SimpleData name="id">198916</SimpleData>
 		<SimpleData name="stream_name">Gershwin Creek</SimpleData>
 		<SimpleData name="utm_zone">9</SimpleData>
