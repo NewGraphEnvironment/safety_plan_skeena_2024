@@ -132,7 +132,7 @@ The latest version of this pdf can be downloaded [here](`r knitr::asis_output(li
 
 <br>
 
-The main goal of this fieldwork is to evaluate fish passage and establish baseline data through electrofishing techniques, working closely with crews from the Office of the Wet’suwet’en. We will be completing fish passage (Phase 1) and habitat confirmation (Phase 2) assessments in the Bulkley, Morice, Kispiox, and Zymoetz River watershed groups. A summary of the potential sites for fish passage assessments, habitat confirmation assessments, and electrofishing is provided in Table \@ref(tab:tab-electrofishing-sites), with kml (Google Earth) and gpx (garmin) files downloadable [here](`r knitr::asis_output(link_kml)`). 
+The main goal of this fieldwork is to evaluate fish passage and establish baseline data through electrofishing techniques. We will be completing fish passage (Phase 1) and habitat confirmation (Phase 2) assessments in the Bulkley, Morice, Kispiox, and Zymoetz River watershed groups. A summary of the potential sites for fish passage assessments, habitat confirmation assessments, and electrofishing is provided in Table \@ref(tab:tab-electrofishing-sites), with kml (Google Earth) and gpx (garmin) files downloadable [here](`r knitr::asis_output(link_kml)`). 
 
 <br>
 
@@ -158,10 +158,6 @@ Lucy Schick
 
 ## Crew Members {.unnumbered}
 
-New Graph Employees Al Irvine and Lucy Schick will be joined by crews from the Office of the Wet'suwet'en. All crew member information and emergency contacts can be found below.
-
-<br>
-
 
 ```{r tab-crew, eval=TRUE}
 crew_ids <- c('airvine', 
@@ -185,35 +181,50 @@ tab_crew |>
 
 <br>
 
+
 ## Equipment Checklists {.unnumbered}
 
-```{r table-equipment, eval=TRUE}
+PLEASE NOTE THAT EQUIPMENT CHECKLISTS ARE PROVIDED FOR THE OVERALL TEAM AND NOT ALL CREWS ARE REQUIRED TO HAVE ALL EQUIPMENT.  ALTHOUGH ENCOURAGED FOR ALL ENVIRONMENTAL SCIENCE TECHNICIANS AND MONITORS TO HAVE THE PERSONAL EQUIPMENT NEW GRAPH ENVIRONMENT WILL HAVE ALL EQUIPMENT NECESSARY TO COMPLETE THE WORK.  
 
+<br>
+
+
+MINIMUM REQUIREMENTS FOR EACH CREW MEMBER INCLUDES GOOD QUALITY AND APPROPRIATELY FITTING LIGHT WEIGHT WADERS AND SEPERATE WADING BOOTS (RUBBER SOLED), HAT, WATER AND A FOOD.  
+
+<br>
+
+
+MINIMUM REQUIREMENTS FOR FIELD TRUCKS INCLUDE A QUALITY RADIO APPROPRIATE FOR FOREST SERVICE ROADS, OFF-ROAD CAPABLE TIRES IN GOOD CONDITION, SPARE TIRE, JACK, AND TOOLS.
+
+```{r table-equipment, eval=TRUE}
+eq <- readr::read_csv(
+  url(("https://raw.githubusercontent.com/NewGraphEnvironment/new_graphiti/main/assets/data/equipment.csv")
+  )
+)
 ## personal equipment 
 
-tab_eq_pers <-  readr::read_csv(
-  url(("https://raw.githubusercontent.com/NewGraphEnvironment/new_graphiti/main/assets/data/equipment.csv")
-  ))|> 
+tab_eq_pers <-  eq |> 
   filter(!is.na(eq_pers_standard)) |>  
   arrange(eq_safety) |>  ##have these first on the list
   select(eq_item)  |>  
   my_untidy_table() |>  
-  rename(`Personal Equipment Checklist` = eq_item)
+  rename(Equipment = eq_item)
 
-my_caption = 'Personal Equipment Checklist'
+my_caption = 'Personal Equipment Checklist - SEE NOTE ABOVE FOR MINIMUM REQUIREMENTS'
 
 tab_eq_pers |>  
-  fpr::fpr_kable(caption = my_caption, scroll = F)
+  kable(caption = my_caption, label = NA) |>  
+  kableExtra::kable_styling(c("condensed", "responsive"),
+                              full_width = T,
+                              font_size = font_set)
 ```
 
 <br>
 
-```{r equip-crew, eval=TRUE}
+```{r equip-crew}
 
 ##equipment for the crew
-tab_eq_crew <-  readr::read_csv(
-  url(("https://raw.githubusercontent.com/NewGraphEnvironment/new_graphiti/main/assets/data/equipment.csv")
-  ))|>
+tab_eq_crew <-  eq |>
   filter(if_any(starts_with('eq_task'), ~ . == 'fish passage')) |>  
   filter(is.na(eq_pers_standard)) |>  
   arrange(eq_safety) |>  
@@ -221,14 +232,34 @@ tab_eq_crew <-  readr::read_csv(
   my_untidy_table() |>  
   rename(`Crew Equipment Checklist` = eq_item)
 
-my_caption = 'Crew Equipment Checklist'
+my_caption = 'Crew Equipment Checklist - SEE NOTE ABOVE FOR MINIMUM REQUIREMENTS'
 
 tab_eq_crew |>  
-  fpr::fpr_kable(caption = my_caption, scroll = F)
+  kable(caption = my_caption, label = NA) |>    
+  kableExtra::kable_styling(c("condensed", "responsive"),
+                              full_width = T,
+                              font_size = font_set)
 
 ```
 
-<br><br>
+<br>
+
+
+```{r equip-truck}
+
+my_caption = 'Truck Equipment Checklist - SEE NOTE ABOVE FOR MINIMUM REQUIREMENTS'
+
+##equipment for the crew
+eq |> 
+  filter(eq_truck == 'x') |>  
+  filter(is.na(eq_pers_standard)) |>  
+  arrange(eq_safety) |>  
+  select(eq_item)  |>  
+  my_untidy_table() |>  
+  rename(Equipment = eq_item) |> 
+  fpr::fpr_kable(caption = my_caption, scroll = FALSE)
+
+```
 
 ## Nearest Hospitals {.unnumbered}
 
@@ -319,10 +350,10 @@ We will be driving on forest service roads where it is essential to exercise cau
 
 ## Field Plan {.unnumbered}
 
-The primary objective of the fieldwork is to assess fish passage and establish baseline monitoring, using electrofishing techniques, in collaboration with crews from the Office of the Wet'suwet'en. We will be completing fish passage (Phase 1) and habitat confirmation (Phase 2) assessments in the Bulkley, Morice, Kispiox, and Zymoetz River watershed groups. Fieldwork methods will produce reports such as the [Skeena Watershed Fish Passage Restoration Planning 2023](https://www.newgraphenvironment.com/fish_passage_skeena_2023_reporting/). Additional reports can be found [here](https://www.newgraphenvironment.com/fish_passage_skeena_2023_reporting/executive-summary.html).
+The primary objective of the fieldwork is to assess fish passage, habitat conditions and establish baseline monitoring, using electrofishing techniques. We will be completing fish passage (Phase 1) and habitat confirmation (Phase 2) assessments in the Bulkley, Morice, Kispiox, and Zymoetz River watershed groups. Fieldwork methods will produce reports such as the [Skeena Watershed Fish Passage Restoration Planning 2023](https://www.newgraphenvironment.com/fish_passage_skeena_2023_reporting/). Additional reports can be found [here](https://www.newgraphenvironment.com/fish_passage_skeena_2023_reporting/executive-summary.html).
 
 
-General fieldwork procedures can be found in our [Fish Passage Guidebook](https://www.newgraphenvironment.com/fish_passage_guidebook/). We generally follow procedures in:
+Although currently incomplete and in rough draft format - fieldwork procedures can be found in our [Fish Passage Guidebook](https://www.newgraphenvironment.com/fish_passage_guidebook/). We generally follow procedures in:
 
 -   [fish passage assessments](https://www2.gov.bc.ca/assets/gov/environment/natural-resource-stewardship/land-based-investment/forests-for-tomorrow/field-assessment-for-determining-fish-passage-status-of-cbs.pdf) [@fish_passage_assessments]
 
