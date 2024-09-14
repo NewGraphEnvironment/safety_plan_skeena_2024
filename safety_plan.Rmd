@@ -127,7 +127,7 @@ font_set <- 8
 
 # `r paste0('Safety Plan - ',name_project_complete)` {.unnumbered .break-after-me}
 
-The latest version of this pdf can be downloaded [here](`r knitr::asis_output(link_pdf)`).
+The **latest version** of this pdf can be downloaded [here](`r knitr::asis_output(link_pdf)`).  If any links in this document are broken, please ensure you are woring with the latest version (ie. download from the link).
 
 
 <br>
@@ -164,7 +164,8 @@ crew_ids <- c('airvine',
               'lschick', 
               'tpierre', 
               'vjoseph', 
-              'jolson')
+              'jolson',
+              'jdoyon')
 
 
 tab_crew <- projects |>  
